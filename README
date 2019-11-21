@@ -1,0 +1,6 @@
+A kernel module for LED control in Intel e1000e 82571 board
+
+To run,
+
+	1st remove e1000e driver module 
+	Then load this kernel module 
