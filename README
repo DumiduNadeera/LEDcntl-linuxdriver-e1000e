@@ -1,6 +1,10 @@
 A kernel module for LED control in Intel e1000e 82571 board
+(This module can be used to read/write registers in Intel® 82571 Gigabit Ethernet Controller by changing offset address )
+
+load the module with intel e1000e driver (don't unload)
 
 To run,
-
-	1st remove e1000e driver module 
-	Then load this kernel module 
+	
+    Build the driver (.ko file) by make file > make
+    Load the driver using insmod  > sudo insmod e1000e_pci_LED_cntl_driver.ko
+    Unload the driver using rmmod > sudo rmmod e1000e_pci_LED_cntl_driver
